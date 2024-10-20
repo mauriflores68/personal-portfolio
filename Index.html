@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Personal Porfolio Website - Mauricio Flores</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/f17ced6bad.js" crossorigin="anonymous"></script>
+
+</head>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+</head>
+<body>  
+
+<div id="header">
+    <div class="container">
+        <div class="name">
+            <p class="special-font">Flores</p>
+        </div>
+        <nav>           
+            <ul id="btn sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Computer Engineer</p>
+            <h1>Hello, I'm <span>Mauricio</span> Flores </br> from San Diego</h1>
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" />
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    My name is Mauricio Flores. I am currently attending UC Merced,
+                    majoring in Computer Science and Engineeing. I am working to specialize
+                    in the computer hardware engineering aspect of the computer engineering field.
+                </p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web interfaces that allows the user to have an easy time accessing the page.</li>
+                        <li><span>PC Development</span><br>Able to design, build, and troubleshoot personal computers to suit a persons
+                                                           needs.</li>
+                        <li><span>Engine replacement</span><br>Took apart a 1968 Chevy C10 engine because it had a crack in the engine block
+                                                                and put it back together to restore the function of the truck.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Timeframe</span><br>what i did</li>
+                        <li><span>Timeframe</span><br>what i did</li>
+                        <li><span>Timeframe</span><br>what i did</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>education</span><br>education stuff</li>
+                        <li><span>education</span><br>education stuff</li>
+                        <li><span>education</span><br>education stuff</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>description for service description for servic description for servic</p>
+                
+            </div>
+            <div>
+                <i class="fas fa-crop"></i>
+                <h2>UI/UX Design</h2>
+                <p>description for service description for servic description for servic</p>
+                
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App design</h2>
+                <p>description for service description for servic description for servic</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" />
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>description of work</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" />
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>description of work</p>
+                    
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" />
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>description of work</p>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-----------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> mauriflores7384@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> (619)538-4566</p>
+                <div class="social-icons">
+                    <a href=" https://www.linkedin.com/in/mauricio-flores-engineer/ "><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/mauri.e.flores/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100013917009957"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://github.com/mauriflores68"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2"> Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required />
+                    <input type="email" name="Email" placeholder="Your Email" required />
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button> 
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Made By Mauricio Flores </p>
+    </div>
+</div>
+    
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents"); 
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVy6wZlDcBmiv6c3zssgOOEgzl7B-sMbFvx47Qt-TJv44m7bBKpjGITGrvRTsX1m1p/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function () {
+                    msg.innerHTML = ""
+                }, 5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>
